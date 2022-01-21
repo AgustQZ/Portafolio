@@ -1,14 +1,21 @@
 /* ******** Propiedades perzonalidas ******** */
 
 :root {
-    --color-primario: rgb(23, 19, 75);
-    --color-secundario: rgb(0, 234, 255);
-    --color-terciario: rgb(255, 0, 221);
-    --color-neutro: rgb(192, 192, 192);
-    --color-enlace: rgb(121, 164, 245);
+    --color-1: #003761;
+    --color-2: #5586A2;
+    --color-3: #74A7C9;
+    --color-4: #AFD4E8;
+    --color-5: #D4EDFC;
+    --color-neutro1: #1D1D1B;
+    --color-neutro2: #404040;
+    --color-neutro3: #7F7F7F;
+    --color-neutro4: #BFBFBF;
+    --color-neutro5: #e8e8e8;
     --font: "Nunito", sans-serif;
-    --max-width: 1200px;
+    --max-width: 1100px;
     --heigth-header: 4.4rem;
+    --alpha-color-black: rgba(0, 0, 0, 0.5);
+    --alpha-color-btn: rgba(0, 0, 0, 0.2);
 }
 
 
@@ -29,12 +36,25 @@ html {
 
 body {
     margin: 0;
-    /* para ocultar lo que se derborde del body */
-    overflow: hidden;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.5rem;
 }
 
 a {
-    color: var(--color-enlace);
+    color: var(--color-1);
     transition: all 0.2s ease-out;
 }
 
@@ -42,34 +62,9 @@ a:hover {
     opacity: 0.75;
 }
 
-h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-
-h2 {
-    margin: 0;
-    font-size: 1.5rem;
-}
-
-h3 {
-    margin: 0;
-    font-size: 1.25rem;
-}
-
-h4 {
-    margin: 0;
+p {
     font-size: 1rem;
-}
-
-h5 {
-    margin: 0;
-    font-size: 0.85rem;
-}
-
-h6 {
-    margin: 0;
-    font-size: 0.7rem;
+    line-height: 1rem;
 }
 
 img {
@@ -77,32 +72,58 @@ img {
     height: auto;
 }
 
-p {
-    line-height: 1.6rem;
-}
-
 
 /* ******** Componentes ******** */
+
+
+/* ******** Hero image ******** */
+
+.hero-image {
+    background-image: url(/img/heroImage01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero-opacity {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--alpha-color-black);
+}
+
+.hero-title {
+    font-size: 5vw;
+    color: var(--color-5);
+    margin-bottom: 1rem;
+    text-align: center;
+}
 
 
 /* ******** Menu ******** */
 
 .menu-btn {
-    background-color: var(--color-secundario);
+    background-color: var(--alpha-color-btn);
     border: 0;
+    border-radius: 5px;
+    padding: 5px 5px 2px 5px;
     cursor: pointer;
 }
 
 .menu-btn svg {
-    fill: var(--color-primario);
+    fill: var(--color-neutro3);
 }
 
 .menu {
+    background-color: var(--color-neutro5);
     position: fixed;
     left: 0;
     bottom: var(--heigth-header);
     width: 100%;
-    background-color: var(--color-secundario);
     display: flex;
     flex-direction: column;
     opacity: 0;
@@ -117,18 +138,19 @@ p {
 
 .menu a {
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     text-align: center;
     text-decoration: none;
-    color: var(--color-enlace);
+    color: var(--color-neutro1);
 }
 
 .menu a:hover {
-    color: var(--color-secundario);
-    background-color: var(--color-primario);
+    color: var(--color-1);
+    background-color: var(--color-4);
+    font-size: 1.2rem;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
     .menu-btn {
         display: none;
     }
@@ -143,8 +165,7 @@ p {
         padding: 0.8rem;
     }
     .menu a:hover {
-        background-color: transparent;
-        color: var(--color-primario);
+        color: var(--color-1);
     }
 }
 
@@ -155,16 +176,16 @@ p {
     box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25rem);
 }
 
-.btn-contactar {
+.btn {
     width: 200px;
     font-weight: bold;
     font-size: 1.4rem;
     border-radius: 5rem;
     display: inline-block;
-    padding: 1rem;
+    padding: 0.7rem;
     text-decoration: none;
-    background-color: var(--color-primario);
-    color: var(--color-secundario);
+    background-color: transparent;
+    color: var(--color-neutro1);
     text-align: center;
 }
 
@@ -185,7 +206,7 @@ p {
     padding: 1rem 2rem 0 2rem;
     width: 100%;
     height: var(--heigth-header);
-    background-color: var(--color-secundario);
+    background-color: transparent;
 }
 
 .header>.container {
@@ -196,14 +217,20 @@ p {
 
 .logo a img {
     width: 4rem;
+    display: none;
 }
 
 @media screen and (min-width: 768px) {}
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
     .header {
         position: sticky;
         top: 0;
         padding: 0.5rem;
+        background-color: var(--color-neutro5);
+    }
+    .logo a img {
+        width: 4rem;
+        display: inline-block;
     }
 }
