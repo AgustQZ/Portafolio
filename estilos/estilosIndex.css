@@ -178,13 +178,12 @@ img {
 
 .btn {
     width: 200px;
-    font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1rem;
     border-radius: 5rem;
+    background-color: var(--color-neutro4);
     display: inline-block;
-    padding: 0.7rem;
+    padding: 0.4rem;
     text-decoration: none;
-    background-color: transparent;
     color: var(--color-neutro1);
     text-align: center;
 }
