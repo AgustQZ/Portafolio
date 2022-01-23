@@ -104,6 +104,33 @@ img {
 }
 
 
+/* ******** habilidades ******** */
+
+
+/* ******** habilidades ******** */
+
+.habilities {
+    /* margin: 0 1rem; */
+    background-color: var(--color-neutro5);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.cien {
+    margin-top: -0.5rem;
+    border-radius: 1rem;
+    background-color: var(--color-neutro4);
+}
+
+.porcentaje {
+    background-color: var(--color-neutro3);
+    border-radius: 1rem;
+    text-align: right;
+    padding-right: 1rem;
+    color: var(--color-neutro4);
+}
+
+
 /* ******** Menu ******** */
 
 .menu-btn {
@@ -194,6 +221,37 @@ img {
     max-width: var(--max-width);
 }
 
+.section {
+    margin: 2rem 1rem;
+}
+
+
+/* ********Alineaciones de texto mobil ******** */
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+@media screen and (min-width: 992px) {
+    .text-lg-left {
+        text-align: left;
+    }
+    .text-lg-center {
+        text-align: center;
+    }
+    .text-lg-right {
+        text-align: right;
+    }
+}
+
 
 /* ********Estilos del sitio ******** */
 
@@ -231,5 +289,10 @@ img {
     .logo a img {
         width: 4rem;
         display: inline-block;
+    }
+    .about {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
     }
 }
