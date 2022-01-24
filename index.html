@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,700;1,200&display=swap" rel="stylesheet">
     <!-- estilo css -->
-    <link rel="stylesheet" href="/estilos/estilosIndex.css">
+    <link rel="stylesheet" href="estilos/estilosIndex.css">
 </head>
 
 <body>
@@ -37,79 +37,113 @@
             </nav>
         </section>
     </header>
-    <section class="hero-image">
+    <section id="inicio" class="hero-image">
         <article class="hero-opacity" ">
                     <h2 class=" hero-title ">Bienvenid@s <br> a mi pagina</h2>
         </article>
     </section>
-    <section id=" acerca " class="about section ">
+    <section id="acerca" class=" about section container ">
         <article>
+            <img src=" img/AgusFoto.jpg " alt=" Foto Agustin " class=" img-about ">
+        </article>
+        <article class=" sobre-mi ">
             <h2>Acerca</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nobis consequuntur voluptate eos ut consequatur inventore distinctio dignissimos impedit fuga beatae, optio veniam dolores necessitatibus laborum architecto ipsa quod facilis!</p>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam ullam eligendi magnam officia ipsum asperiores, dicta repellat, libero qui doloribus rem neque ut quisquam pariatur perferendis et tempore iste natus. Magnam esse ratione magni quisquam dolores. Ex numquam, aliquid vel voluptatem dolores vero repellendus neque minus eaque.</p>
-            <div class="text-center text-lg-left ">
-                <a class="btn " href="documents/hojaDeVida.pdf " target="_blank " rel="noopener ">Hoja de Vida</a>
+            <div class=" text-center text-lg-left ">
+                <a class=" btn " href=" documents/hojaDeVida.pdf " target=" _blank " rel=" noopener ">Hoja de Vida</a>
             </div>
         </article>
-        <article>
-            <img src="img/AgusFoto.jpg " alt="Foto Agustin " class="img-about ">
-        </article>
-        <article class=" ">
-            <h3 class="text-center text-lg-left ">Mis habilidades</h3>
-            <div class="habilities ">
+        <article >
+            <h3 class=" text-center text-lg-left ">Mis habilidades</h3>
+            <div class=" habilities ">
                 <p>Photoshop</p>
-                <div class="cien ">
-                    <div class="porcentaje " style="width: 80%; ">80%</div>
+                <div class=" cien ">
+                    <div class=" porcentaje " style=" width: 80%; ">80%</div>
                 </div>
                 <p>Illustrator</p>
-                <div class="cien ">
-                    <div class="porcentaje "style="width: 78%; ">78%</div>
+                <div class=" cien ">
+                    <div class=" porcentaje "style=" width: 78%; ">78%</div>
                 </div>
                 <p>After Effects</p>
-                <div class="cien ">
-                    <div class="porcentaje "style="width: 70%; ">70%</div>
+                <div class=" cien ">
+                    <div class=" porcentaje "style=" width: 70%; ">70%</div>
                 </div>
                 <p>Audition</p>
-                <div class="cien ">
-                    <div class="porcentaje " style="width: 65%; ">65%</div>
+                <div class=" cien ">
+                    <div class=" porcentaje " style=" width: 65%; ">65%</div>
                 </div>
                 <p>Html y Css</p>
-                <div class="cien ">
-                    <div class="porcentaje " style="width: 70%; ">70%</div>
+                <div class=" cien ">
+                    <div class=" porcentaje " style=" width: 70%; ">70%</div>
                 </div>
                 <p>Programacion</p>
-                <div class="cien ">
-                    <div class="porcentaje " style="width: 30%; ">30%</div>
+                <div class=" cien ">
+                    <div class=" porcentaje " style=" width: 30%; ">30%</div>
                 </div>
             </div>
         </article>
     </section>
-    <section id=" servicios " class=" services section ">
-        <div class=" ">
-            <h2 class="section-tittle ">Mis Servicios</h2>
-            <article class="service-card ">
+    <section id="servicios" class="services section ">
+        <div class=" services-div ">
+            <h2 class=" section-tittle text-center ">Mis Servicios</h2>
+            <article class=" service-card ">
+                <p><i>Aqui va un icono</i></p>
+                <h3>Aqui va un servicio</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, aliquid fuga, quis magnam accusamus quos dolor harum commodi minus sunt ea voluptates cupiditate? Doloremque, nemo.</p>
+            </article>
+            <article class=" service-card ">
+                <p><i>Aqui va un icono</i></p>
+                <h3>Aqui va un servicio</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, aliquid fuga, quis magnam accusamus quos dolor harum commodi minus sunt ea voluptates cupiditate? Doloremque, nemo.</p>
+            </article>
+            <article class=" service-card ">
                 <p><i>Aqui va un icono</i></p>
                 <h3>Aqui va un servicio</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, aliquid fuga, quis magnam accusamus quos dolor harum commodi minus sunt ea voluptates cupiditate? Doloremque, nemo.</p>
             </article>
         </div>
     </section>
-    <section id=" portafolio " class=" portfolio section ">
-        <h2>Portafolio</h2>
-        <a href="img-01 " class="portafio-card ">
-            <img src="img/Logo Agus Audifonos_002.jpg " alt="logo agus audifono ">
-            <aside class="potafolio-card-info ">
+    <section id="portafolio" class=" portafolio section ">
+        <div class=" container ">
+            <h2 class=" section-tittle text-center ">Lo que he echo</h2>
+            <a href="#creacion-01 " class=" portafolio-card ">
+            <img src=" img/Logo Agus Audifonos_002.jpg " alt=" logo agus audifono ">
+            <aside class=" portafolio-card-info ">
                 <div>
                     <h3>Logo Agus Audifonos</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos at perferendis eos recusandae illo, ad et asperiores vel voluptatum itaque molestias fugit.</p>
                 </div>
             </aside>
-        </a>
+            </a>
+        </div>
     </section>
-    <section id=" testimonios " class=" testimonials ">
+    <article class="modal" id="creacion-01">
+        <div class="modal-content">
+            <a href="#cerrar " class="modal-close">
+                <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 352 512 "><path fill="currentColor " d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28
+            75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48
+            0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z "></path></svg>
+            </a>
+            <article class="portafolio-modal">
+                <img src="img/Logo Agus Audifonos_002.jpg" alt="Logo Agus Audifonos">
+                <div class="portafolio-modal-info">
+                    <h3>Titulo de la Creacion</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed sunt inventore, fugiat magnam nostrum corporis numquam perferendis est nesciunt, molestiae expedita quo similique consequatur beatae.</p>
+                    <aside class="portafolio-detalles">
+                        <small>Nombre Creacion</small>
+                        <small>Fecha</small>
+                        <small>Tipo</small>
+                        <small>Etc</small>
+                    </aside>
+                </div>
+            </article>
+        </div>
+    </article>
+    <section id="testimonios" class="testimonials">
         <h2>Testimonios</h2>
     </section>
-    <section id=" contacto " class=" contact ">
+    <section id="contacto" class="contact">
         <h2>Contacto</h2>
     </section>
     <section class=" footer ">
