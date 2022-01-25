@@ -93,7 +93,6 @@ img {
     justify-content: center;
     align-items: center;
     background-color: var(--alpha-color-black);
-    bottom: ;
 }
 
 .hero-title {
@@ -354,30 +353,36 @@ img {
         text-align: right;
     }
     .header {
+        height: 4rem;
         position: sticky;
         top: 0;
         padding: 0.5rem;
-        background-color: var(--color-neutro5);
+        background-color: white;
     }
     .logo a img {
-        width: 4rem;
+        width: 3rem;
         display: inline-block;
     }
     .menu-btn {
         display: none;
     }
     .menu {
+        height: 3rem;
+        padding: 0 1rem;
         position: static;
         opacity: 1;
         width: auto;
         flex-direction: row;
         pointer-events: auto;
+        background-color: white;
+        border-radius: 5rem;
     }
     .menu a {
         padding: 0.8rem;
     }
     .menu a:hover {
         color: var(--color-1);
+        background-color: transparent;
     }
     .about {
         display: grid;
