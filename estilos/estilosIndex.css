@@ -80,10 +80,8 @@ img {
 /* Hero image */
 
 .hero-image {
-    background-image: url(/img/heroImage01.jpg);
-    background-repeat: no-repeat;
+    background: url("/img/heroImage01.jpg") no-repeat center;
     background-size: cover;
-    background-position: center;
     background-attachment: fixed;
 }
 
@@ -95,6 +93,7 @@ img {
     justify-content: center;
     align-items: center;
     background-color: var(--alpha-color-black);
+    bottom: ;
 }
 
 .hero-title {
