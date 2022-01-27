@@ -328,6 +328,24 @@ img {
     height: 100%;
 }
 
+.portafolio-modal{
+    background-color: white;
+    padding: 1rem;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.portafolio-modal h3{
+    margin: 1rem 0;
+}
+
+.portafolio-detalles{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-auto-rows: 1.5rem;
+}
+
 @media screen and (min-width: 768px) {
     .portafolio>.container {
         display: grid;
@@ -402,5 +420,16 @@ img {
     }
     .portafolio .section-tittle {
         grid-column: span 3;
+    }
+    .portafolio-modal{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width:  70vw;
+        flex-direction: row;
+    }
+
+    .portafolio-modal-info{
+        padding-left:1rem;
+        align-self: center;
     }
 }
