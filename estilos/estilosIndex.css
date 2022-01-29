@@ -455,6 +455,14 @@ img {
     color: var(--color-neutro1);
 }
 
+/******** footer ********/
+.footer{
+    background-color: var(--color-neutro5);
+    color: var(--color-neutro3);
+    padding: 0.5rem;
+    text-align: center;
+}
+
 /*********** TAMAÑO TABLETA ***********/
 
 @media screen and (min-width: 768px) {
