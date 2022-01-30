@@ -81,7 +81,7 @@ img {
 /* Hero image */
 
 .hero-image {
-    background: url("/img/heroImage01.jpg") no-repeat center;
+    background: url("https://agustqz.github.io/Portafolio//img/heroImage01.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
 }
