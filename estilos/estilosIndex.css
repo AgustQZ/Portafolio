@@ -13,7 +13,7 @@
     --color-neutro5: #e8e8e8;
     --font: "Nunito", sans-serif;
     --max-width: 1100px;
-    --heigth-header: 4.4rem;
+    --heigth-header: 4rem;
     --alpha-color-black: rgba(0, 0, 0, 0.5);
     --alpha-color-btn: rgba(0, 0, 0, 0.2);
 }
@@ -46,7 +46,7 @@ h1 {
 }
 
 h2 {
-    margin: 0;
+    margin: 0 0 1rem 0;
     font-size: 2rem;
 }
 
@@ -74,78 +74,109 @@ img {
     height: auto;
 }
 
+/* ******** Utilidades ******** */
 
-/* ******** Componentes ******** */
-
-
-/* Hero image */
-
-.hero-image {
-    background: url("https://agustqz.github.io/Portafolio//img/heroImage01.jpg") no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
+/* contenedores*/
+.container-sections {
+    margin: 0 1rem;
 }
-
-.hero-opacity {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--alpha-color-black);
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
 }
-
-.hero-title {
-    font-size: 5vw;
-    color: var(--color-5);
-    margin-bottom: 1rem;
+.section {
+    margin: 4rem 0 0 0;
+}
+.marco-redondeado{
+    border-radius: 1rem;
+    background-color: var(--color-neutro5);
+    /* border: solid thin var(--color-neutro5); */
+}
+/* sombra */
+.box-shadow {
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25rem);
+}
+/* botones */
+.btn {
+    width: 200px;
+    font-size: 1rem;
+    border-radius: 5rem;
+    background-color: var(--color-neutro4);
+    display: inline-block;
+    padding: 0.4rem;
+    text-decoration: none;
+    color: var(--color-neutro1);
     text-align: center;
 }
-
-
-/* ******** habilidades ******** */
-
-.habilities {
-    background-color: var(--color-neutro5);
-    padding: 1rem;
-    border-radius: 1rem;
+/* Modal */
+.modal {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--alpha-color-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+}
+.modal-content {
+    position: relative;
 }
 
-.cien {
-    margin-top: -0.5rem;
-    border-radius: 1rem;
-    background-color: var(--color-neutro4);
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 }
-
-.porcentaje {
-    background-color: var(--color-neutro3);
-    border-radius: 1rem;
+.modal-close svg {
+    width: 2rem;
+    height: 2rem;
+    color: var(--color-neutro1);
+}
+.modal[id|="creacion"]:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+/* Alineaciones de texto mobil */
+.text-left {
+    text-align: left;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
     text-align: right;
-    padding-right: 1rem;
-    color: var(--color-neutro4);
 }
 
 
-/* ******** Menu ******** */
+/* ******** header ******** */
 
-.menu-btn {
-    background-color: var(--alpha-color-btn);
-    border: 0;
-    border-radius: 5px;
-    padding: 5px 5px 2px 5px;
-    cursor: pointer;
+/* menu mobile */
+
+.header {
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    width: 100%;
+    height: var(--heigth-header);
+    /* background-color: yellow; */
 }
 
-.menu-btn svg {
-    fill: var(--color-neutro3);
+.logo a img {
+    width: 4rem;
+    display: none;
 }
 
 .menu {
     background-color: var(--color-neutro5);
     position: fixed;
-    left: 0;
-    bottom: var(--heigth-header);
+    left: 1rem;
+    bottom: 4rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -168,139 +199,94 @@ img {
 }
 
 .menu a:hover {
-    color: var(--color-1);
-    background-color: var(--color-4);
+    color: var(--color-neutro2);
+    background-color: transparent;
     font-size: 1.2rem;
 }
 
-
-/* Modal */
-
-.modal {
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: var(--alpha-color-black);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 1s;
-}
-
-.modal-content {
-    position: relative;
-}
-
-.modal-close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-}
-
-.modal-close svg {
-    width: 2rem;
-    height: 2rem;
-    color: var(--color-neutro5);
-}
-
-.modal[id|="creacion"]:target {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-
-/* ******** Utilidades ******** */
-
-
-
-.box-shadow {
-    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25rem);
-}
-
-.btn {
-    width: 200px;
-    font-size: 1rem;
-    border-radius: 5rem;
-    background-color: var(--color-neutro4);
-    display: inline-block;
-    padding: 0.4rem;
-    text-decoration: none;
-    color: var(--color-neutro1);
-    text-align: center;
-}
-
-.container {
-    max-width: var(--max-width);
-    margin: 0 auto;
-}
-.container2 {
-    margin: 0 1rem;
+/* menu mobile */
+.container-menu {
+    text-align: right;
+    padding-right: 1rem;
     /* background-color: red; */
 }
 
-.marco-redondeado{
-    border-radius: 1rem;
+.menu-btn {
     background-color: var(--color-neutro5);
-    /* border: solid thin var(--color-neutro5); */
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 5px 2px 5px;
+    cursor: pointer;
 }
 
-
-/* ********Alineaciones de texto mobil ******** */
-
-.text-left {
-    text-align: left;
+.menu-btn svg {
+    fill: var(--color-neutro1);
 }
 
-.text-center {
+/* Hero image */
+
+.hero-image {
+    background: url("https://agustqz.github.io/Portafolio//img/heroImage01.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero-opacity {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--alpha-color-black);
+}
+
+.hero-title-a {
+    font-size: 4rem;
+    color: var(--color-5);
+    margin-bottom: 1rem;
     text-align: center;
 }
 
-.text-right {
-    text-align: right;
+.hero-title-b {
+    font-size: 2rem;
+    color: var(--color-5);
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
 
-/* ********Estilos del sitio ******** */
+/* Habilidades */
+
+.habilities {
+    padding: 1rem;
+}
+
+.cien {
+    margin-top: -0.5rem;
+    border-radius: 1rem;
+    background-color: var(--color-neutro4);
+}
+
+.porcentaje {
+    background-color: var(--color-neutro3);
+    border-radius: 1rem;
+    text-align: right;
+    padding-right: 1rem;
+    color: var(--color-neutro4);
+}
 
 .about>article {
     margin-bottom: 1rem;
 }
 
-.header {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    z-index: 999;
-    padding: 1rem 2rem 0 2rem;
-    width: 100%;
-    height: var(--heigth-header);
-    background-color: transparent;
-}
-
-.header>.container {
-    display: flex;
-    justify-content: center;
-}
-
-.logo a img {
-    width: 4rem;
-    display: none;
-}
-
 .sobre-mi {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
 /* Portafolio */
-
-
-
 .portafolio-card {
     position: relative;
     width: 100%;
@@ -361,12 +347,12 @@ img {
 /* tarjetas de contacto */
 
 .contact-card{
-    background-color: var(--color-neutro5);
+    /* background-color: var(--color-neutro5); */
     margin: 1rem auto;
     padding: 1rem;
     width: 100%;
     height: 144px;
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -469,7 +455,7 @@ img {
     text-align: center;
 }
 
-/*********** TAMAÑO TABLETA ***********/
+/************************* TAMAÑO TABLETA **************************/
 
 @media screen and (min-width: 768px) {
     .portafolio>.container {
@@ -492,7 +478,7 @@ img {
 }
 
 
-/*********** TAMAÑO ESCRITORIO ***********/
+/*********************** TAMAÑO ESCRITORIO *************************/
 
 @media screen and (min-width: 992px) {
     .full-lg-screen {
@@ -508,6 +494,7 @@ img {
     .text-lg-right {
         text-align: right;
     }
+
     /*********** nav ***********/
     .header {
         height: 4rem;
@@ -515,6 +502,10 @@ img {
         top: 0;
         padding: 0.5rem;
         background-color: white;
+    }
+    .header>.container-menu {
+        display: flex;
+        justify-content: center;
     }
     .logo a img {
         width: 3rem;
@@ -538,14 +529,20 @@ img {
         padding: 0.8rem;
     }
     .menu a:hover {
-        color: var(--color-1);
+        color: var(--color-neutro2);
         background-color: transparent;
     }
     .about {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
+        column-gap: 1.5rem;
         align-content: center;
+    }
+    .sobre-mi {
+        grid-column: 2;
+    }
+    .habilities {
+        grid-column: 3;
     }
     .services-div {
         display: grid;

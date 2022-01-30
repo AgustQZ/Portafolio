@@ -19,18 +19,18 @@
 <body>
     <!----- navegacion ----->
     <header class="header">
-        <section class="container">
+        <section class="container-menu">
             <div class="logo">
                 <a href="index.html"><img src="img/favicon.png" alt="Logo manuscrito"></a>
             </div>
-            <button class="menu-btn">
+            <button class="menu-btn text-right">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 448 512">
                     <path
                         d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
                     </path>
                 </svg>
             </button>
-            <nav class="menu">
+            <nav class="menu marco-redondeado">
                 <a href="#inicio">Inicio</a>
                 <a href="#acerca">Acerca</a>
                 <a href="#servicios">Servicios</a>
@@ -43,62 +43,68 @@
     <!----- hero image ----->
     <section id="inicio" class="hero-image">
         <article class="hero-opacity" ">
-                    <h2 class=" hero-title ">Bienvenid@s <br> a mi pagina</h2>
+                    <h2 class=" hero-title-a ">¡Hola!</h2>
+                    <h2 class=" hero-title-b ">Esta es mi pagina Web portafolio</h2>
         </article>
     </section>
-    <div class="container2">
-        <!----- acerca ----->
-        <section id="acerca" class="about section container">
-            <article>
-                <img src="img/AgusCaricatura.jpg" alt="Foto Agustin" class="img-about marco-redondeado">
-            </article>
-            <article class="sobre-mi">
-                <h2>Acerca de mi</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nobis consequuntur voluptate eos ut
-                    consequatur inventore distinctio dignissimos impedit fuga beatae, optio veniam dolores necessitatibus
-                    laborum architecto ipsa quod facilis!</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam ullam eligendi magnam officia ipsum
-                    asperiores, dicta repellat, libero qui doloribus rem neque ut quisquam pariatur perferendis et tempore
-                    iste natus. Magnam esse ratione magni quisquam dolores. Ex numquam, aliquid vel voluptatem dolores vero
-                    repellendus neque minus eaque.</p>
-                <div class=" text-center text-lg-left ">
-                    <a class=" btn " href=" documents/hojaDeVida.pdf " target=" _blank " rel=" noopener ">Hoja de Vida</a>
-                </div>
-            </article>
-            <article>
-                <h3 class="text-center text-lg-left">Mis habilidades</h3>
-                <div class="habilities">
-                    <p>Photoshop</p>
-                    <div class="cien">
-                        <div class="porcentaje" style="width: 80%;">80%</div>
+
+    <!-- CONTENEDOR DE SECCIONES -->
+    <div class="container-sections">
+        <!----- ACERCA ----->
+        <section id="acerca" class="section">
+            <div class="about container">
+                <article class="sobre-mi">
+                    <h2 class="text-center text-lg-left">Algo sobre mi</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nobis consequuntur voluptate eos ut
+                        consequatur inventore distinctio dignissimos impedit fuga beatae, optio veniam dolores necessitatibus
+                        laborum architecto ipsa quod facilis!
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nobis consequuntur voluptate eos ut
+                        consequatur inventore distinctio dignissimos impedit fuga beatae, optio veniam dolores necessitatibus
+                        laborum architecto ipsa quod facilis!
+                    </p>
+                    <div class="text-center text-lg-right ">
+                        <a class=" btn " href=" documents/hojaDeVida.pdf " target=" _blank " rel=" noopener ">Hoja de Vida</a>
                     </div>
-                    <p>Illustrator</p>
-                    <div class="cien">
-                        <div class="porcentaje" style="width: 78%;">78%</div>
+                </article>
+                <article>
+                    <img src="img/AgusCaricatura.jpg" alt="Foto Agustin" class="img-about marco-redondeado">
+                </article>
+                <article class="habilities marco-redondeado">
+                    <h3 class="text-center text-lg-left">Habilidades</h3>
+                    <div class="habilities">
+                        <p>Photoshop</p>
+                        <div class="cien">
+                            <div class="porcentaje" style="width: 80%;">80%</div>
+                        </div>
+                        <p>Illustrator</p>
+                        <div class="cien">
+                            <div class="porcentaje" style="width: 78%;">78%</div>
+                        </div>
+                        <p>After Effects</p>
+                        <div class=" cien ">
+                            <div class=" porcentaje " style=" width: 70%; ">70%</div>
+                        </div>
+                        <p>Audition</p>
+                        <div class=" cien ">
+                            <div class=" porcentaje " style=" width: 65%; ">65%</div>
+                        </div>
+                        <p>Html y Css</p>
+                        <div class=" cien ">
+                            <div class=" porcentaje " style=" width: 70%; ">70%</div>
+                        </div>
+                        <p>Programacion</p>
+                        <div class=" cien ">
+                            <div class=" porcentaje " style=" width: 30%; ">30%</div>
+                        </div>
                     </div>
-                    <p>After Effects</p>
-                    <div class=" cien ">
-                        <div class=" porcentaje " style=" width: 70%; ">70%</div>
-                    </div>
-                    <p>Audition</p>
-                    <div class=" cien ">
-                        <div class=" porcentaje " style=" width: 65%; ">65%</div>
-                    </div>
-                    <p>Html y Css</p>
-                    <div class=" cien ">
-                        <div class=" porcentaje " style=" width: 70%; ">70%</div>
-                    </div>
-                    <p>Programacion</p>
-                    <div class=" cien ">
-                        <div class=" porcentaje " style=" width: 30%; ">30%</div>
-                    </div>
-                </div>
-            </article>
+                </article>
+            </div>
         </section>
-        <!----- servicios ----->
-        <section id="servicios" class="services section container">
-            <div class=" services-div ">
-                <h2 class=" section-tittle text-center ">Mis Servicios</h2>
+        <!----- SERVICIOS ----->
+        <section id="servicios" class="services section">
+            <div class="services-div container">
+                <h2 class="section-tittle text-center ">Mis Servicios</h2>
                 <article class=" service-card ">
                     <p><i>Aqui va un icono</i></p>
                     <h3>Aqui va un servicio</h3>
@@ -119,12 +125,35 @@
                 </article>
             </div>
         </section>
-        <!----- portafolio ----->
+        <!----- PORTAFOLIO ----->
         <section id="portafolio" class="portafolio section">
             <div class="container">
-                <h2 class="section-tittle text-center">Lo que he echo</h2>
+                <h2 class="section-tittle">Mi Trabajo</h2>
+                <!-- img 01 -->
                 <a href="#creacion-01" class="portafolio-card">
-                    <img src="img/Logo Agus Audifonos_002.jpg" alt="logo agus audifono" class=" marco-redondeado">
+                    <img src="img/img01.jpg" alt="logo agus audifono" class=" marco-redondeado">
+                    <aside class="portafolio-card-info">
+                        <div>
+                            <h3>Logo Agus Audifonos</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos at perferendis eos recusandae
+                                illo, ad et asperiores vel voluptatum itaque molestias fugit.</p>
+                        </div>
+                    </aside>
+                </a>
+                <!-- img 02 -->
+                <a href="#creacion-02" class="portafolio-card">
+                    <img src="img/img02.jpg" alt="logo agus audifono" class=" marco-redondeado">
+                    <aside class="portafolio-card-info">
+                        <div>
+                            <h3>Logo Agus Audifonos</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos at perferendis eos recusandae
+                                illo, ad et asperiores vel voluptatum itaque molestias fugit.</p>
+                        </div>
+                    </aside>
+                </a>
+                <!-- img 03 -->
+                <a href="#creacion-03" class="portafolio-card">
+                    <img src="img/img03.jpg" alt="logo agus audifono" class=" marco-redondeado">
                     <aside class="portafolio-card-info">
                         <div>
                             <h3>Logo Agus Audifonos</h3>
@@ -135,45 +164,106 @@
                 </a>
             </div>
         </section>
-        <!----- modal portafolio ----->
-        <article class="modal" id="creacion-01">
-            <div class="modal-content">
-                <a href="#cerrar " class="modal-close ">
-                    <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 352 512 ">
-                        <path fill="currentColor " d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28
-                75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48
-                0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z "></path>
-                    </svg>
-                </a>
-                <article class="portafolio-modal ">
-                    <img src="img/Logo Agus Audifonos_002.jpg" alt="Logo Agus Audifonos">
-                    <div class="portafolio-modal-info">
-                        <h3>Titulo de la Creacion</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed sunt inventore, fugiat magnam
-                            nostrum corporis numquam perferendis est nesciunt, molestiae expedita quo similique consequatur
-                            beatae.</p>
-                        <aside class="portafolio-detalles">
-                            <small><b>Nombre Creacion</b></small>
-                            <small>Nombre Creacion</small>
-                            <small><b>Fecha</b></small>
-                            <small>01/01/0001</small>
-                            <small><b>Tipo</b></small>
-                            <small>Mapa de Bits</small>
-                        </aside>
-                    </div>
-                </article>
-            </div>
+        <!----- MODALES PORTAFOLIO ----->
+        <article>
+            <!-- modal img 01 -->
+            <article class="modal" id="creacion-01">
+                <div class="modal-content marco-redondeado">
+                    <a href="#cerrar " class="modal-close ">
+                        <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 352 512 ">
+                            <path fill="currentColor " d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28
+                            75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48
+                            0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z "></path>
+                        </svg>
+                    </a>
+                    <article class="portafolio-modal">
+                        <img src="img/img01.jpg" class="marco-redondeado" alt="Logo Agus Audifonos">
+                        <div class="portafolio-modal-info">
+                            <h3>Titulo de la Creacion</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed sunt inventore, fugiat magnam
+                                nostrum corporis numquam perferendis est nesciunt, molestiae expedita quo similique consequatur
+                                beatae.</p>
+                            <aside class="portafolio-detalles">
+                                <small><b>Nombre Creacion</b></small>
+                                <small>Nombre Creacion</small>
+                                <small><b>Fecha</b></small>
+                                <small>01/01/0001</small>
+                                <small><b>Tipo</b></small>
+                                <small>Mapa de Bits</small>
+                            </aside>
+                        </div>
+                    </article>
+                </div>
+            </article>
+            <!-- modal img 02 -->
+            <article class="modal" id="creacion-02">
+                <div class="modal-content marco-redondeado">
+                    <a href="#cerrar " class="modal-close ">
+                        <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 352 512 ">
+                            <path fill="currentColor " d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28
+                            75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48
+                            0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z "></path>
+                        </svg>
+                    </a>
+                    <article class="portafolio-modal">
+                        <img src="img/img02.jpg" class="marco-redondeado" alt="Logo Agus Audifonos">
+                        <div class="portafolio-modal-info">
+                            <h3>Titulo de la Creacion</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed sunt inventore, fugiat magnam
+                                nostrum corporis numquam perferendis est nesciunt, molestiae expedita quo similique consequatur
+                                beatae.</p>
+                            <aside class="portafolio-detalles">
+                                <small><b>Nombre Creacion</b></small>
+                                <small>Nombre Creacion</small>
+                                <small><b>Fecha</b></small>
+                                <small>01/01/0001</small>
+                                <small><b>Tipo</b></small>
+                                <small>Mapa de Bits</small>
+                            </aside>
+                        </div>
+                    </article>
+                </div>
+            </article>
+            <!-- modal img 03 -->
+            <article class="modal" id="creacion-03">
+                <div class="modal-content marco-redondeado">
+                    <a href="#cerrar " class="modal-close ">
+                        <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 352 512 ">
+                            <path fill="currentColor " d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28
+                        75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48
+                        0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z "></path>
+                        </svg>
+                    </a>
+                    <article class="portafolio-modal">
+                        <img src="img/img03.jpg" class="marco-redondeado" alt="Logo Agus Audifonos">
+                        <div class="portafolio-modal-info">
+                            <h3>Titulo de la Creacion</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed sunt inventore, fugiat magnam
+                                nostrum corporis numquam perferendis est nesciunt, molestiae expedita quo similique consequatur
+                                beatae.</p>
+                            <aside class="portafolio-detalles">
+                                <small><b>Nombre Creacion</b></small>
+                                <small>Nombre Creacion</small>
+                                <small><b>Fecha</b></small>
+                                <small>01/01/0001</small>
+                                <small><b>Tipo</b></small>
+                                <small>Mapa de Bits</small>
+                            </aside>
+                        </div>
+                    </article>
+                </div>
+            </article>
         </article>
         <!----- testimonios ----->
-        <section id="testimonios" class="testimonials container">
+        <!-- <section id="testimonios" class="testimonials container section">
             <h2>Testimonios</h2>
-        </section>
+        </section> -->
         <!----- contacto ----->
-        <section id="contacto" class="contact container">
+        <section id="contacto" class="contact section">
             <div class="container">
-                <h3>Contacto</h3>
+                <h2>Contacto</h2>
                 <article class="contact-cards">
-                    <aside class="contact-card">
+                    <aside class="contact-card marco-redondeado">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 576 512">
                             <path fill="currentColor"
                                 d="M575.8 255.5C575.8 273.5 560.8 287.6 543.8 287.6H511.8L512.5 447.7C512.5 450.5 512.3 453.1 512 455.8V472C512 494.1 494.1 512 472 512H456C454.9 512 453.8 511.1 452.7 511.9C451.3 511.1 449.9 512 448.5 512H392C369.9 512 352 494.1 352 472V384C352 366.3 337.7 352 320 352H256C238.3 352 224 366.3 224 384V472C224 494.1 206.1 512 184 512H128.1C126.6 512 125.1 511.9 123.6 511.8C122.4 511.9 121.2 512 120 512H104C81.91 512 64 494.1 64 472V360C64 359.1 64.03 358.1 64.09 357.2V287.6H32.05C14.02 287.6 0 273.5 0 255.5C0 246.5 3.004 238.5 10.01 231.5L266.4 8.016C273.4 1.002 281.4 0 288.4 0C295.4 0 303.4 2.004 309.5 7.014L564.8 231.5C572.8 238.5 576.9 246.5 575.8 255.5L575.8 255.5z">
@@ -182,7 +272,7 @@
                         <h4>Ubicacion</h4>
                         <small>Medellin, Colombia</small>
                     </aside>
-                    <aside class="contact-card">
+                    <aside class="contact-card marco-redondeado">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512">
                             <path fill="currentColor"
                                 d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z">
@@ -191,7 +281,7 @@
                         <h4>Celular</h4>
                         <small><a href="tel:3184871282">+57 3184871282</a></small>
                     </aside>
-                    <aside class="contact-card">
+                    <aside class="contact-card marco-redondeado">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512">
                             <path fill="currentColor"
                                 d="M493.6 163c-24.88-19.62-45.5-35.37-164.3-121.6C312.7 29.21 279.7 0 256.4 0H255.6C232.3 0 199.3 29.21 182.6 41.38c-118.8 86.25-139.4 101.1-164.3 121.6C6.75 172 0 186 0 200.8v263.2C0 490.5 21.49 512 48 512h416c26.51 0 48-21.49 48-47.1V200.8C512 186 505.3 172 493.6 163zM303.2 367.5C289.1 378.5 272.5 384 256 384s-33.06-5.484-47.16-16.47L64 254.9V208.5c21.16-16.59 46.48-35.66 156.4-115.5c3.18-2.328 6.891-5.187 10.98-8.353C236.9 80.44 247.8 71.97 256 66.84c8.207 5.131 19.14 13.6 24.61 17.84c4.09 3.166 7.801 6.027 11.15 8.478C400.9 172.5 426.6 191.7 448 208.5v46.32L303.2 367.5z">
@@ -200,7 +290,7 @@
                         <h4>Correo</h4>
                         <small><a href="mailto:san.agustin20.aqz@gmail.com">san.agustin20.aqz@gmail.com</a></small>
                     </aside>
-                    <aside class="contact-card">
+                    <aside class="contact-card marco-redondeado">
                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="share-nodes"
                             class="svg-inline--fa fa-share-nodes" role="img" xmlns="http://www.w3.org/2000/svg" width="24"
                             height="24" viewBox="0 0 448 512">
