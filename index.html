@@ -14,8 +14,10 @@
     <!-- fuente Nunito -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,700;1,200&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,700;1,200&display=swap">
+    <!-- hamburguesa -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css" />
 </head>
 
 <body>
@@ -35,12 +37,12 @@
             <nav class="menu marco-redondeado">
                 <a href="#inicio">Inicio</a>
                 <a href="#acerca">Acerca</a>
-                <a href="#servicios">Servicios</a>
                 <a href="#portafolio">Portafolio</a>
                 <a href="#contacto">Contacto</a>
             </nav>
         </section>
     </header>
+
     <!----- hero image ----->
     <section id="inicio" class="hero-image">
         <article class="hero-opacity" ">
@@ -569,7 +571,7 @@
                             pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
                         <textarea name="comments" cols="50" rows="5" placeholder="Comentarios"></textarea>
                         <div class="contact-form-loader text-center none">
-                            <img src="img/Spinner.svg" alt="Enviando">
+                            <img src="assets/img/Spinner.svg" alt="Enviando">
                         </div>
                         <input class="btn" type="submit" value="Enviar">
                     </form>
@@ -597,6 +599,7 @@
             </section>
 </body>
 <!----- javascript ----->
-<script src=" script.js "></script>
+<script src="js/main.js" type="module"></script>
+<!-- <script src="js/script.js"></script> -->
 
 </html>
