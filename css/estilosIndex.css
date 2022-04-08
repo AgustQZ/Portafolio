@@ -91,7 +91,7 @@ img {
   background-color: var(--color-neutro5);
   /* border: solid thin var(--color-neutro5); */
 }
-.marco-redondo {
+.marco-redondo50 {
   border-radius: 50%;
 }
 /* sombra */
@@ -103,11 +103,11 @@ img {
   width: 200px;
   font-size: 1rem;
   border-radius: 5rem;
-  background-color: var(--color-neutro4);
+  background-color: var(--color-neutro1);
   display: inline-block;
   padding: 0.4rem;
   text-decoration: none;
-  color: var(--color-neutro1);
+  color: var(--color-neutro5);
   text-align: center;
 }
 /* Modal */
@@ -129,7 +129,6 @@ img {
 .modal-content {
   position: relative;
 }
-
 .modal-close {
   position: absolute;
   top: 1rem;
@@ -140,6 +139,7 @@ img {
   height: 2rem;
   color: var(--color-neutro1);
 }
+/* vincular modal con imagen */
 .modal[id|="creacion"]:target {
   opacity: 1;
   pointer-events: auto;
@@ -180,14 +180,14 @@ img {
   position: fixed;
   left: 1vw;
   right: 1vw;
-  bottom: 2rem;
+  bottom: 3.2rem;
   width: 98vw;
   display: flex;
   flex-direction: column;
   pointer-events: none;
   transform: translateY(100%);
   opacity: 0;
-  transition: transform 150ms ease-out, opacity 300ms ease;
+  transition: transform 300ms ease-out, opacity 200ms ease-out;
 }
 
 .menu.activo {
@@ -219,8 +219,11 @@ img {
 }
 
 .menu-btn {
-  background-color: var(--color-neutro5);
+  background-color: var(--color-neutro1);
   border: 0;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
   border-radius: 5px;
   padding: 5px 5px 2px 5px;
   z-index: 99;
@@ -228,15 +231,15 @@ img {
 }
 
 .menu-btn svg {
-  fill: var(--color-neutro1);
+  width: 2rem;
+  height: 2rem;
+  fill: var(--color-neutro5);
 }
 
 /* Hero image */
 
 .hero-image {
-  background: url("https://agustqz.github.io/Portafolio/assets/img/heroImage01.jpg")
-    no-repeat center;
-  /* background-image: url(/img/DSC079822.jpg); */
+  background: url("https://agustqz.github.io/Portafolio/assets/img/heroImage01.jpg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -468,8 +471,8 @@ img {
 /************************* TAMAÑO TABLETA **************************/
 
 @media screen and (min-width: 768px) {
-  nav.menu {
-    top: 0;
+  .menu {
+    margin-top: -3rem;
   }
   .menu a {
     color: var(--color-neutro3);
