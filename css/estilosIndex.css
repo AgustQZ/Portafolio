@@ -178,10 +178,9 @@ img {
   background-color: var(--color-neutro1);
   /* background-color: red; */
   position: fixed;
-  left: 1vw;
-  right: 1vw;
+  left: 1rem;
+  right: 1rem;
   bottom: 3.2rem;
-  width: 98vw;
   display: flex;
   flex-direction: column;
   pointer-events: none;
