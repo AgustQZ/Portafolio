@@ -74,6 +74,9 @@ img {
 }
 
 /* ******** Utilidades ******** */
+.none {
+  display: none;
+}
 
 /* contenedores*/
 .container {
@@ -169,6 +172,18 @@ img {
 .logo a img {
   width: 4rem;
   display: none;
+}
+/* fondo falso */
+.false-background {
+  position: fixed;
+  z-index: 88;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.false-background.activo {
+  opacity: 1;
 }
 /* panel con menu */
 .menu {
