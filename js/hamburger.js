@@ -9,7 +9,7 @@ export default function hamburguerBtn(
     const d = document;
     d.querySelector(btn).addEventListener("click", (e) => {
         d.querySelector(svg1).classList.toggle("none");
-        d.querySelector(svg2).classList.toggle("none");
+        // d.querySelector(svg2).classList.toggle("none");
         d.querySelector(menu).classList.toggle("activo");
         d.querySelector(falseBackgraund).classList.toggle("none");
 
@@ -18,14 +18,14 @@ export default function hamburguerBtn(
                 d.querySelector(falseBackgraund).classList.add("none");
                 d.querySelector(menu).classList.remove("activo");
                 d.querySelector(svg1).classList.remove("none");
-                d.querySelector(svg2).classList.add("none");
+                // d.querySelector(svg2).classList.add("none");
             }
         });
     });
     d.querySelector(falseBackgraund).addEventListener("click", (e) => {
         d.querySelector(falseBackgraund).classList.add("none");
         d.querySelector(menu).classList.toggle("activo");
-        d.querySelector(svg1).classList.toggle("none");
-        d.querySelector(svg2).classList.toggle("none");
+        d.querySelector(svg1).classList.remove("none");
+        // d.querySelector(svg2).classList.add("none");
     });
 }
