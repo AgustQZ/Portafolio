@@ -1,12 +1,21 @@
 /* ******** Propiedades perzonalidas ******** */
 
 :root {
-    --color-1: #003761;
-    --color-2: #5586a2;
-    --color-3: #74a7c9;
-    --color-4: #afd4e8;
-    --color-5: #d4edfc;
-    --color-neutro1: #1d1d1b;
+    /*  #1c2833
+        #212f3d
+        #64ffc8
+        #64ffe4
+        #51ff33
+        #33ffe4 */
+    /* color dominante, neutro que ayuda a resaltar los otros*/
+    --color-1: #1c2833;
+    /* color tonico, vida, complemento del dominante */
+    --color-2: #00f1da;
+    /* color complementario */
+    --color-3: #fb8070;
+    --color-4: #feb7b0;
+    /* neutros */
+    --color-neutro1: #090909;
     --color-neutro2: #404040;
     --color-neutro3: #7f7f7f;
     --color-neutro4: #bfbfbf;
@@ -14,7 +23,7 @@
     --font: "Nunito", sans-serif;
     --max-width: 1100px;
     --heigth-header: 4rem;
-    --alpha-color-black: rgba(0, 0, 0, 0.5);
+    --alpha-color-black: #1c283399;
     --alpha-color-btn: rgba(0, 0, 0, 0.2);
 }
 
@@ -106,11 +115,11 @@ img {
     width: 200px;
     font-size: 1rem;
     border-radius: 5rem;
-    background-color: var(--color-neutro1);
+    background-color: var(--color-1);
     display: inline-block;
     padding: 0.4rem;
     text-decoration: none;
-    color: var(--color-neutro5);
+    color: var(--color-4);
     text-align: center;
 }
 /* Modal */
@@ -188,7 +197,7 @@ img {
 }
 /* panel con menu */
 .menu {
-    background-color: var(--color-neutro1);
+    background-color: var(--color-1);
     position: fixed;
     left: 0;
     right: 0;
@@ -214,7 +223,7 @@ img {
     font-size: 1.1rem;
     text-align: center;
     text-decoration: none;
-    color: var(--color-neutro5);
+    color: var(--color-3);
 }
 .menu a:hover {
     color: var(--color-neutro2);
@@ -232,7 +241,7 @@ img {
     position: fixed;
     right: 0;
     bottom: 0;
-    background-color: var(--color-neutro1);
+    background-color: var(--color-1);
     border: 0;
     width: 3.2rem;
     height: 2.5rem;
@@ -249,7 +258,7 @@ img {
     bottom: 0.5rem;
     width: 1.7rem;
     height: 1.7rem;
-    fill: var(--color-neutro5);
+    fill: var(--color-3);
 }
 /* Hero image */
 .hero-image {
@@ -271,14 +280,14 @@ img {
 
 .hero-title-a {
     font-size: 4rem;
-    color: var(--color-5);
+    color: var(--color-3);
     margin-bottom: 1rem;
     text-align: center;
 }
 
 .hero-title-b {
     font-size: 2rem;
-    color: var(--color-5);
+    color: var(--color-3);
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -292,15 +301,15 @@ img {
 .cien {
     margin-top: -0.5rem;
     border-radius: 1rem;
-    background-color: var(--color-neutro4);
+    background-color: var(--color-4);
 }
 
 .porcentaje {
-    background-color: var(--color-neutro3);
+    background-color: var(--color-1);
     border-radius: 1rem;
     text-align: right;
     padding-right: 1rem;
-    color: var(--color-neutro4);
+    color: var(--color-4);
 }
 
 .about > article {
@@ -373,14 +382,11 @@ img {
 }
 
 /* tarjetas de contacto */
-
 .contact-card {
-    /* background-color: var(--color-neutro5); */
     margin: 1rem auto;
     padding: 1rem;
     width: 100%;
     height: 144px;
-    /* border-radius: 1rem; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -388,7 +394,7 @@ img {
 }
 
 .contact-card > svg {
-    color: var(--color-neutro1);
+    color: var(--color-1);
 }
 
 .contact-card > small {
@@ -398,7 +404,7 @@ img {
 .redes a {
     text-decoration: none;
     padding: 0 0.4rem;
-    color: var(--color-neutro1);
+    color: var(--color-1);
 }
 
 /* formulario de contacto */
@@ -425,11 +431,11 @@ img {
 
 .contact-form input {
     border: none;
-    border-bottom: thin solid var(--color-neutro4);
+    border-bottom: thin solid var(--color-1);
 }
 
 .contact-form textarea {
-    border: thin solid var(--color-neutro4);
+    border: thin solid var(--color-1);
     resize: none;
 }
 /******** loader ********/
@@ -445,8 +451,8 @@ img {
     color: var(--color-neutro1);
 }
 .contact-form input[type="submit"] {
-    background-color: var(--color-neutro1);
-    color: var(--color-neutro5);
+    background-color: var(--color-1);
+    color: var(--color-4);
     cursor: pointer;
     font-size: 0.9rem;
     transition: all 0.5s ease-out;
@@ -490,7 +496,12 @@ img {
         margin-top: -3rem;
     }
     .menu a {
-        color: var(--color-neutro3);
+        padding: 0.8rem;
+        color: var(--color-1);
+    }
+    .menu a:hover {
+        color: var(--color-3);
+        background-color: transparent;
     }
     .portafolio > .container {
         display: grid;
@@ -561,13 +572,6 @@ img {
         pointer-events: auto;
         background-color: white;
         border-radius: 5rem;
-    }
-    .menu a {
-        padding: 0.8rem;
-    }
-    .menu a:hover {
-        color: var(--color-neutro2);
-        background-color: transparent;
     }
     .about {
         display: grid;
