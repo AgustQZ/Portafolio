@@ -322,6 +322,18 @@ img {
     justify-content: space-evenly;
 }
 
+/* trabajos */
+.trabajos a {
+    width: 100%;
+    height: 144px;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
 /* Portafolio */
 .portafolio-card {
     position: relative;
