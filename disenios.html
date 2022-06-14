@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Diseños</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <!-- estilo css -->
+    <link rel="stylesheet" href="css/estilosIndex.css">
+    <!-- fuente Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,700;1,200&display=swap">
+    <!-- hamburguesa -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css" />
+
+    <style>
+        .margin {
+            margin: 0.5rem;
+        }
+
+        /* back-btn */
+        .back-btn {
+            z-index: 89;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            background-color: var(--color-1);
+            border: 0;
+            width: 3.2rem;
+            height: 2.5rem;
+            text-align: start;
+            border-radius: 5px 0 0 0;
+            padding-left: 0.3rem;
+            cursor: pointer;
+        }
+
+        .back-btn svg {
+            position: fixed;
+            bottom: 0.5rem;
+            width: 1.7rem;
+            height: 1.7rem;
+            fill: var(--color-3);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="portafolio margin">
+            <!-- img 01 -->
+            <a href="#creacion-01" class="portafolio-card">
+                <img src="assets/img/galery/img01.jpg" alt="Caricatura Elizabeth" class=" marco-redondeado">
+                <aside class="portafolio-card-info marco-redondeado">
+                    <div>
+                        <h3>Caricatura Eliza</h3>
+                    </div>
+                </aside>
+            </a>
+            <!-- img 02 -->
+            <a href="#creacion-02" class="portafolio-card">
+                <img src="assets/img/galery/img02.jpg" alt="Caricatura Vale" class=" marco-redondeado">
+                <aside class="portafolio-card-info marco-redondeado">
+                    <div>
+                        <h3>Caricatura Vale</h3>
+                    </div>
+                </aside>
+            </a>
+            <!-- img 03 -->
+            <a href="#creacion-03" class="portafolio-card">
+                <img src="assets/img/galery/img03.jpg" alt="Caricatura Agus V.1.02" class=" marco-redondeado">
+                <aside class="portafolio-card-info marco-redondeado">
+                    <div>
+                        <h3>Caricatura Agus</h3>
+                    </div>
+                </aside>
+            </a>
+            <!-- img 04 -->
+            <a href="#creacion-04" class="portafolio-card">
+                <img src="assets/img/galery/img04.jpg" alt="logo Agus audifono" class=" marco-redondeado">
+                <aside class="portafolio-card-info marco-redondeado">
+                    <div>
+                        <h3>Logo Agus Audifonos</h3>
+                    </div>
+                </aside>
+            </a>
+            <!-- img 05 -->
+            <a href="#creacion-05" class="portafolio-card">
+                <img src="assets/img/galery/img05.jpg" alt="logo reloj arena" class=" marco-redondeado">
+                <aside class="portafolio-card-info marco-redondeado">
+                    <div>
+                        <h3>Logo reloj de arena</h3>
+                    </div>
+                </aside>
+            </a>
+            <!-- img 06 -->
+            <a href="#creacion-06" class="portafolio-card">
+                <img src="assets/img/galery/img06.jpg" alt="Fotografia Blanco y Negro Valeria"
+                    class=" marco-redondeado">
+                <aside class="portafolio-card-info marco-redondeado">
+                    <div>
+                        <h3>Fotografia Blanco y Negro Valeria</h3>
+                    </div>
+                </aside>
+            </a>
+            <!-- img 07 -->
+            <a href="#creacion-07" class="portafolio-card">
+                <img src="assets/img/galery/img07.jpg" alt="Montaje Aguila Valeria" class=" marco-redondeado">
+                <aside class="portafolio-card-info marco-redondeado">
+                    <div>
+                        <h3>Montaje Aguila Valeria</h3>
+                    </div>
+                </aside>
+            </a>
+            <!-- img 08 -->
+            <a href="#creacion-08" class="portafolio-card">
+                <img src="assets/img/galery/img08.jpg" alt="logo aguilas de acero mtb" class=" marco-redondeado">
+                <aside class="portafolio-card-info marco-redondeado">
+                    <div>
+                        <h3>Logo aguilas de acero MTB estilo metalizado</h3>
+                    </div>
+                </aside>
+            </a>
+            <!-- img 09 -->
+            <a href="#creacion-09" class="portafolio-card">
+                <img src="assets/img/galery/img09.jpg" alt="Montaje en paisaje Sentido" class=" marco-redondeado">
+                <aside class="portafolio-card-info marco-redondeado">
+                    <div>
+                        <h3>Montaje en paisaje de Logo Sentido</h3>
+                    </div>
+                </aside>
+            </a>
+        </div>
+    </section>
+    <!----- MODALES PORTAFOLIO ----->
+    <article>
+        <!-- modal img 01 -->
+        <article class="modal" id="creacion-01">
+            <div class="modal-content">
+                <a href="#cerrar " class="modal-close ">
+                    <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 352 512 ">
+                        <path fill="currentColor " d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28
+                                    75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48
+                                    0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z "></path>
+                    </svg>
+                </a>
+                <article class="portafolio-modal marco-redondeado">
+                    <img src="assets/img/galery/img01.jpg" class="marco-redondeado" alt="Caricatura Eliza">
+                    <div class="portafolio-modal-info">
+                        <h3>Caricatura Elizabeth</h3>
+                        <p>Caricatura realizada luego de ver curso de creacion de caricaturas "Iconize Me" de
+                            video2brain con el formador José Ramos utilizando el programa de diseño Adobe
+                            Illustrator .</p>
+                        <aside class="portafolio-detalles">
+                            <small><b>Año:</b></small>
+                            <small>2014</small>
+                            <small><b>Tipo:</b></small>
+                            <small>Illustracion Vectorizada</small>
+                        </aside>
+                    </div>
+                </article>
+            </div>
+        </article>
+        <!-- modal img 02 -->
+        <article class="modal" id="creacion-02">
+            <div class="modal-content">
+                <a href="#cerrar " class="modal-close ">
+                    <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 352 512 ">
+                        <path fill="currentColor " d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28
+                                    75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48
+                                    0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z "></path>
+                    </svg>
+                </a>
+                <article class="portafolio-modal marco-redondeado">
+                    <img src="assets/img/galery/img02.jpg" class="marco-redondeado" alt="Logo Agus Audifonos">
+                    <div class="portafolio-modal-info">
+                        <h3>Caricatura Vale</h3>
+                        <p>Caricatura realizada a mi hija Valeria, vectorizada en adobe Illustrator, con el
+                            proposito de ser animada en adobe after effects.</p>
+                        <aside class="portafolio-detalles">
+                            <small><b>Año:</b></small>
+                            <small>2020</small>
+                            <small><b>Tipo:</b></small>
+                            <small>Illustracion Vectorizada</small>
+                        </aside>
+                    </div>
+                </article>
+            </div>
+        </article>
+        <!-- modal img 03 -->
+        <article class="modal" id="creacion-03">
+            <div class="modal-content marco-redondeado">
+                <a href="#cerrar " class="modal-close ">
+                    <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 352 512 ">
+                        <path fill="currentColor " d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28
+                                75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48
+                                0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z "></path>
+                    </svg>
+                </a>
+                <article class="portafolio-modal marco-redondeado">
+                    <img src="assets/img/galery/img03.jpg" class="marco-redondeado" alt="Logo Agus Audifonos">
+                    <div class="portafolio-modal-info">
+                        <h3>Caricatura Agus</h3>
+                        <p>Realizado en adobe illustrator y postproducida en adobe photoshop. Fue la segunda
+                            illustracion con ese programa de ilustraicion y esa tecnica.</p>
+                        <aside class="portafolio-detalles">
+                            <small><b>Año:</b></small>
+                            <small>2013</small>
+                            <small><b>Tipo:</b></small>
+                            <small>Vector y mapa de bits</small>
+                        </aside>
+                    </div>
+                </article>
+            </div>
+        </article>
+        <!-- modal img 04 -->
+        <article class="modal" id="creacion-04">
+            <div class="modal-content marco-redondeado">
+                <a href="#cerrar " class="modal-close ">
+                    <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 352 512 ">
+                        <path fill="currentColor " d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28
+                                75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48
+                                0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z "></path>
+                    </svg>
+                </a>
+                <article class="portafolio-modal marco-redondeado">
+                    <img src="assets/img/galery/img04.jpg" class="marco-redondeado" alt="Logo Agus Audifonos">
+                    <div class="portafolio-modal-info">
+                        <h3>Logotipo Audifonos Agus</h3>
+                        <p>Realizado en adobe illustrator y acabados realizados en adobe photoshop. Su finalidad
+                            era usarse como imagen de login en las redes sociales.</p>
+                        <aside class="portafolio-detalles">
+                            <small><b>Año:</b></small>
+                            <small>2011</small>
+                            <small><b>Tipo:</b></small>
+                            <small>Vector y mapa de bits</small>
+                        </aside>
+                    </div>
+                </article>
+            </div>
+        </article>
+        <!-- modal img 05 -->
+        <article class="modal" id="creacion-05">
+            <div class="modal-content marco-redondeado">
+                <a href="#cerrar " class="modal-close ">
+                    <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 352 512 ">
+                        <path fill="currentColor " d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28
+                                75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48
+                                0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z "></path>
+                    </svg>
+                </a>
+                <article class="portafolio-modal marco-redondeado">
+                    <img src="assets/img/galery/img05.jpg" class="marco-redondeado" alt="Logo Agus Audifonos">
+                    <div class="portafolio-modal-info">
+                        <h3>Logotipo Reloj de Arena</h3>
+                        <p>Logo realizado inicialmente con el animo de hacerme un tatuaje. Se trata de un reloj
+                            de arena que representa el tiempo, como se agota y lo limitado que es.
+                        </p>
+                        <aside class="portafolio-detalles">
+                            <small><b>Año:</b></small>
+                            <small>2018</small>
+                            <small><b>Tipo:</b></small>
+                            <small>Vector y mapa de bits</small>
+                        </aside>
+                    </div>
+                </article>
+            </div>
+        </article>
+        <!-- modal img 06 -->
+        <article class="modal" id="creacion-06">
+            <div class="modal-content marco-redondeado">
+                <a href="#cerrar " class="modal-close ">
+                    <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 352 512 ">
+                        <path fill="currentColor " d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28
+                                75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48
+                                0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z "></path>
+                    </svg>
+                </a>
+                <article class="portafolio-modal marco-redondeado">
+                    <img src="assets/img/galery/img06.jpg" class="marco-redondeado" alt="Logo Agus Audifonos">
+                    <div class="portafolio-modal-info">
+                        <h3>Fotografia BN Valera</h3>
+                        <p>Editada en adobe photoshop.</p>
+                        <aside class="portafolio-detalles">
+                            <small><b>Año:</b></small>
+                            <small>2013</small>
+                            <small><b>Tipo:</b></small>
+                            <small>Mapa de bits</small>
+                        </aside>
+                    </div>
+                </article>
+            </div>
+        </article>
+        <!-- modal img 07 -->
+        <article class="modal" id="creacion-07">
+            <div class="modal-content marco-redondeado">
+                <a href="#cerrar " class="modal-close ">
+                    <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 352 512 ">
+                        <path fill="currentColor " d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28
+                                75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48
+                                0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z "></path>
+                    </svg>
+                </a>
+                <article class="portafolio-modal marco-redondeado">
+                    <img src="assets/img/galery/img07.jpg" class="marco-redondeado" alt="Logo Agus Audifonos">
+                    <div class="portafolio-modal-info">
+                        <h3>Valeria en el aguila</h3>
+                        <p>Montaje realizado con adobe photoshop.</p>
+                        <aside class="portafolio-detalles">
+                            <small><b>Año:</b></small>
+                            <small>2015</small>
+                            <small><b>Tipo:</b></small>
+                            <small>Mapa de bits</small>
+                        </aside>
+                    </div>
+                </article>
+            </div>
+        </article>
+        <!-- modal img 07 -->
+        <article class="modal" id="creacion-08">
+            <div class="modal-content marco-redondeado">
+                <a href="#cerrar " class="modal-close ">
+                    <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 352 512 ">
+                        <path fill="currentColor " d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28
+                                75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48
+                                0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z "></path>
+                    </svg>
+                </a>
+                <article class="portafolio-modal marco-redondeado">
+                    <img src="assets/img/galery/img08.jpg" class="marco-redondeado" alt="Logo Agus Audifonos">
+                    <div class="portafolio-modal-info">
+                        <h3>Logo Aguilas de Acero renovado</h3>
+                        <p>Version renovada (no oficial) del logo del grupo de MTB "Aguilas de acero" y aplicada
+                            a una imagen con efecto de profundidad.</p>
+                        <aside class="portafolio-detalles">
+                            <small><b>Año:</b></small>
+                            <small>2019</small>
+                            <small><b>Tipo:</b></small>
+                            <small>Vector y mapa de bits</small>
+                        </aside>
+                    </div>
+                </article>
+            </div>
+        </article>
+        <!-- modal img 07 -->
+        <article class="modal" id="creacion-09">
+            <div class="modal-content marco-redondeado">
+                <a href="#cerrar " class="modal-close ">
+                    <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 352 512 ">
+                        <path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28
+                                75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48
+                                0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z "></path>
+                    </svg>
+                </a>
+                <article class="portafolio-modal marco-redondeado">
+                    <img src="assets/img/galery/img09.jpg" class="marco-redondeado" alt="Logo Agus Audifonos">
+                    <div class="portafolio-modal-info">
+                        <h3>Montaje Diseños Sentido</h3>
+                        <p>Realizado en adobe photoshop. Fue uno de muchos prototipos que realice con el animo
+                            de usarlos para impulsar mi marca personal de empresa el dia que la realizara.</p>
+                        <aside class="portafolio-detalles">
+                            <small><b>Año:</b></small>
+                            <small>2012</small>
+                            <small><b>Tipo:</b></small>
+                            <small>Mapa de bits</small>
+                        </aside>
+                    </div>
+                </article>
+            </div>
+        </article>
+    </article>
+
+    <!-- boton para volver al inicio -->
+    <a href="index.html#portafolio" class="back-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+                d="M447.1 256C447.1 273.7 433.7 288 416 288H109.3l105.4 105.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448s-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H416C433.7 224 447.1 238.3 447.1 256z" />
+        </svg>
+    </a>
+</body>
+
+</html>
