@@ -150,6 +150,7 @@ img {
     width: 2rem;
     height: 2rem;
     color: var(--color-neutro1);
+    background-color: white;
 }
 /* vincular modal con imagen */
 .modal[id|="creacion"]:target {
