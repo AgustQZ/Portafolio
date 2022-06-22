@@ -3,7 +3,8 @@ import sendMail from "./sendMail.js";
 
 const d = document;
 
-d.addEventListener("DOMContentLoaded", (e) => {
+d.addEventListener("DOMContentLoaded", () => {
+    // boton hamburguesa
     hamburguerBtn(
         ".menu-btn",
         ".svg1",
@@ -12,5 +13,6 @@ d.addEventListener("DOMContentLoaded", (e) => {
         ".menu a",
         ".false-background"
     );
+    // enviar correo de contacto
     sendMail(".contact-form", ".contact-form-loader", ".form-response");
 });

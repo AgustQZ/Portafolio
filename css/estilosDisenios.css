@@ -1,0 +1,56 @@
+:root {
+    --color-1: #1c2833;
+    --color-2: #00f1da;
+    --color-3: #fb8070;
+    --color-4: #feb7b0;
+    --color-neutro1: #090909;
+    --color-neutro2: #404040;
+    --color-neutro3: #7f7f7f;
+    --color-neutro4: #bfbfbf;
+    --color-neutro5: #e8e8e8;
+}
+.margin {
+    margin: 0.5rem;
+}
+.header-disenios {
+    display: none;
+}
+
+/* back-btn */
+.back-btn {
+    z-index: 89;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-1);
+    border: 0;
+    width: 3.2rem;
+    height: 2.5rem;
+    text-align: start;
+    border-radius: 5px 0 0 0;
+    padding-left: 0.3rem;
+    cursor: pointer;
+}
+
+.back-btn svg {
+    position: fixed;
+    bottom: 0.5rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    fill: var(--color-3);
+}
+
+@media screen and (min-width: 992px) {
+    .back-btn {
+        display: none;
+    }
+    .header-disenios {
+        display: block;
+        position: fixed;
+        margin-left: -2rem;
+        width: 2rem;
+    }
+    .header-disenios svg {
+        fill: var(--color-3);
+    }
+}

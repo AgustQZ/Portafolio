@@ -1,3 +1,5 @@
+// NOTA: ESTE SCRIPT ESTA SOLO DE REFERENCIA PARA VER COMO SE HARIAN LOS MODULOS EN UN SOLO ARCHIVO CON FUNCIONES ANONIMAS
+
 // ********* para abrir el menu mobile *********
 ((d) => {
     const $btnmenu = d.querySelector(".menu-btn"),
