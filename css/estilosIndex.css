@@ -346,17 +346,16 @@ img {
 }
 
 .programacion {
-    background: url(/assets/img/programacion.jpg) no-repeat center;
-    object-fit: cover;
     width: 100%;
     height: 100%;
+    background: url(/assets/img/programacion.jpg) no-repeat center;
+    object-fit: cover;
 }
 /*---------- portafolio ----------*/
 .portafolio-card {
+    display: block;
     position: relative;
     width: 100%;
-    margin: 0 auto;
-    display: block;
     border-radius: 1rem;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
 }

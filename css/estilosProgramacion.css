@@ -1,0 +1,41 @@
+:root {
+    /* color dominante, neutro que ayuda a resaltar los otros*/
+    --color-1: #1c2833;
+    /* color tonico, vida, complemento del dominante */
+    --color-2: #00f1da;
+    /* color complementario */
+    --color-3: #fb8070;
+    --color-4: #feb7b0;
+    /* neutros */
+    --color-neutro1: #090909;
+    --color-neutro2: #404040;
+    --color-neutro3: #7f7f7f;
+    --color-neutro4: #bfbfbf;
+    --color-neutro5: #e8e8e8;
+    --font: "Nunito", sans-serif;
+    --max-width: 1100px;
+    --heigth-header: 4rem;
+    --alpha-color-black: #1c283399;
+    --alpha-color-btn: rgba(0, 0, 0, 0.2);
+}
+
+/* ******** Resetear valores ******** */
+
+html {
+    box-sizing: border-box;
+    font-family: var(--font);
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+/*-------------------- TAMAÑO MOVIL --------------------*/
+
+/*-------------------- TAMAÑO TABLETA --------------------*/
+
+/*-------------------- TAMAÑO ESCRITORIO --------------------*/
