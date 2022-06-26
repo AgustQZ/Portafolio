@@ -1,5 +1,6 @@
 import hamburguerBtn from "./hamburger.js";
 import sendMail from "./sendMail.js";
+import galeryModal from "./galery.js";
 
 const d = document;
 
